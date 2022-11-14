@@ -48,6 +48,7 @@ jobs:
             rustc: 1.58.0
             extra_desc: dist-server
             extra_args: --no-default-features --features=dist-tests test_dist_ -- --test-threads 1
+            allow_failure: true
           - os: ubuntu-20.04
             rustc: stable
           - os: ubuntu-20.04
